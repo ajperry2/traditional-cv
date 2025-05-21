@@ -71,7 +71,7 @@ Resizing and cropping functionality in opencv
 
 **shape_detection**
 
-Resizing and cropping functionality in opencv
+Detecting shapes and classifying them using the number of corners in their contours
 
 ![Resizing and cropping functionality in opencv](./images/shape_detection.png "Title")
 
