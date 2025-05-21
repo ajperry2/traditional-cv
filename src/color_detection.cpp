@@ -8,7 +8,9 @@ using namespace cv;
 
 
 int color_detection() {
-    // Blank Image
+    /*
+    Detects an object using color
+    */
     string img_path = "../Resources/lambo.png";
     Mat img = imread(img_path);
     Mat hsv_image;

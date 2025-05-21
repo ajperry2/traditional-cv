@@ -10,6 +10,9 @@ using namespace cv;
 
 
 int color_picker() {
+    /*
+    Shows a color detection and allows you to alter the thresholds
+    */
 
     int hmin=0, smin = 0, vmin = 0;
     int hmax=179, smax = 255, vmax = 255;

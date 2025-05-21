@@ -8,6 +8,9 @@ using namespace cv;
 
 
 int import_webcam() {
+    /*
+    Load a webcam and display it
+    */
     VideoCapture cap(0);
     while (!cap.isOpened()) {
         // wait for authorization

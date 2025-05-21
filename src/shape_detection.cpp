@@ -7,6 +7,9 @@ using namespace std;
 using namespace cv;
 
 void get_contours(Mat image_dilation, Mat image_draw){
+    /*
+    Find shapes in image, classify them by the number of corners on them
+    */
 
 
     vector<vector<Point>> contours;
@@ -53,7 +56,9 @@ void get_contours(Mat image_dilation, Mat image_draw){
 }
 
 int shape_detection() {
-    // Blank Image
+    /*
+    Detect shapes and display the detections
+    */
     string img_path = "../Resources/shapes.png";
     Mat img = imread(img_path);
     // Preprocessing

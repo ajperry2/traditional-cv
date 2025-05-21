@@ -8,6 +8,9 @@ using namespace cv;
 
 
 int import_image() {
+    /*
+    Load an image and display it
+    */
     string img_path = "../Resources/test.png";
     Mat img = imread(img_path);
     imshow( "Image", img);

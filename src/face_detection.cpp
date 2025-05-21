@@ -10,7 +10,9 @@ using namespace cv;
 
 
 int face_detection() {
-    // Blank Image
+    /*
+    Finds a face in an image using a cascade classifier
+    */
     string img_path = "../Resources/test.png";
     Mat img = imread(img_path);
 

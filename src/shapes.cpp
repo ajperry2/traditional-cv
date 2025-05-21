@@ -8,7 +8,9 @@ using namespace cv;
 
 
 int shapes() {
-    // Blank Image
+    /*
+    Draw shapes on a blank image
+    */
     Mat img(512, 512, CV_8UC3, Scalar(255, 255, 255));
     circle(img, Point(256, 256), 155, Scalar(0,69,255), 10);
     

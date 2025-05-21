@@ -11,6 +11,9 @@ float w = 420, h = 596;
 vector<Point> initial_points, document_points;
 
 void preprocessing(){
+    /*
+    Change the given image to prepare for detecting a document
+    */
     cvtColor(img_original, grayImage, COLOR_BGR2GRAY);
 
     GaussianBlur( grayImage, blurImage, Size(7,7), 5, 0);
@@ -21,6 +24,9 @@ void preprocessing(){
 }
 
 void reorder(){
+    /*
+    Order the corners of a document by top left, top right, bottom left, bottom right
+    */
     vector<int> sum_points(4), sub_points(4);
     for (int i = 0; i < 4; i++)
     {
@@ -43,6 +49,9 @@ void reorder(){
 }
 
 vector<Point> get_contours(){
+    /*
+    Find the sides of the document
+    */
 
 
     vector<vector<Point>> contours;
@@ -79,6 +88,9 @@ vector<Point> get_contours(){
 
 
 void draw_points(vector<Point> points, Scalar color){
+    /*
+    Draw corners on original image so we can see where they are coming from
+    */
     for (int i = 0; i < points.size(); i++)
     {
         circle(img_original, points[i], 10, color, FILLED);
@@ -88,7 +100,9 @@ void draw_points(vector<Point> points, Scalar color){
 }
 
 int document_scanner() {
-    // Blank Image
+    /*
+    Find a document in an image and extract it
+    */
     string img_path = "../Resources/paper.jpg";
     img_original = imread(img_path);
     

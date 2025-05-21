@@ -23,6 +23,10 @@ using namespace std;
 
 
 int main(int num_args, char* args[]) {
+    /*
+    Entrypoint, load functions and execute one chosen from
+    the environment variable 'SCRIPT'
+    */
     
     std::unordered_map<string, std::function<int()>> chapters;
     const char* variable_name = "SCRIPT";

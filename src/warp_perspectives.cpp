@@ -8,7 +8,10 @@ using namespace cv;
 
 
 int warp_perspectives() {
-    // Blank Image
+    /*
+    Extract a card from an image and project it so it looks
+    right at us
+    */
     string img_path = "../Resources/cards.jpg";
     Mat img = imread(img_path);
     Mat imgWarp;

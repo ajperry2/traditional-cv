@@ -12,6 +12,10 @@ namespace fs = std::filesystem;
 
 
 int license_plate_detector() {
+    /*
+    Detect russian license plates using a cascade classifier, in all images in
+    the plates resource folder
+    */
     string plate_path = "../Resources/Plates";
     // for OCR
 

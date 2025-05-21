@@ -8,6 +8,9 @@ using namespace cv;
 
 
 int rescaling() {
+    /*
+    Rescale an image, crop it and show the results
+    */
     string img_path = "../Resources/test.png";
     Mat img = imread(img_path);
     Mat resized, cropped;

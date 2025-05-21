@@ -17,6 +17,11 @@ vector<vector<int>> my_colors {
 vector<Scalar> myColorValues {{255, 0, 0}, {0, 0, 255}};
 
 Point get_contours(Mat image_dilation){
+    /*
+    Filter detections with the size of objects, their shape
+    and their aspect ratios, record those that meet the 
+    criteria
+    */
 
 
     vector<vector<Point>> contours;
@@ -50,6 +55,9 @@ Point get_contours(Mat image_dilation){
     return my_point;
 }
 void find_color(Mat image){
+    /*
+    Detect pencils from their color
+    */
     Mat image_hsv;
     cvtColor(image, image_hsv, COLOR_BGR2HSV);
     for (int i = 0; i < my_colors.size(); i++)
@@ -69,6 +77,9 @@ void find_color(Mat image){
 }
 
 void draw_on_canvas(){
+    /*
+    Draw dots where objects (pencils) have been on image
+    */
     for (int i = 0; i < points.size(); i++)
     {
         circle(
