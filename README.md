@@ -45,25 +45,23 @@ Imports an image from Resources and displays it
 
 Imports a video from Resources and displays it
 
-<video src="./images/import_video.mp4" placeholder="./images/import_video.mp4" autoplay loop controls muted title="test-title">
-Sorry, your browser doesn't support HTML 5 video.
-</video>
+
+![Imports a video from Resources and displays it](./images/import_video.gif "Title")
 
 **import_webcam**
 
 Shows a webcam if you have one
 
-<video src="./images/import_webcam.mp4" placeholder="./images/import_webcam.mp4" autoplay loop controls muted title="test-title">
-Sorry, your browser doesn't support HTML 5 video.
-</video>
+
+![Shows a webcam if you have one](./images/import_webcam.gif "Title")
 
 **license_plate_detector**
 
 Uses a cascade classifier to find russian license plates in images
 
-<video src="./images/license_plate_detector.mp4" placeholder="./images/license_plate_detector.mp4" autoplay loop controls muted title="test-title">
-Sorry, your browser doesn't support HTML 5 video.
-</video>
+
+![Uses a cascade classifier to find russian license plates in images](./images/license_plate_detector.gif "Title")
+
 
 **rescaling**
 
@@ -88,10 +86,7 @@ Draws shapes on an image
 
 Opens a webcam where If I hold a red or blue marker/pencil correctly it draws on the image
 
-<video src="./images/virtual_painter.mp4" placeholder="./images/virtual_painter.mp4" autoplay loop controls muted title="test-title">
-Sorry, your browser doesn't support HTML 5 video.
-</video>
-
+![Opens a webcam where If I hold a red or blue marker/pencil correctly it draws on the image](./images/virtual_painter.gif "Title")
 
 **warp_perspectives**
 
